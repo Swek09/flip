@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Coin Flip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
-		background-color: #333;
+      background-color: #333;
       height: 100%;
       margin: 0;
       padding: 0;
     }
 
-	h1{
-		color: #fff;
-	}
+    h1{
+      color: #fff;
+    }
 
     .container {
       width: 100%;
@@ -25,57 +26,57 @@
     }
   
     #result {
-    	margin: 0;
+      margin: 0;
     }
 
-	#history {
-		border-collapse: collapse;
-		margin-top: 50px;
-	}
+    #history {
+      border-collapse: collapse;
+      margin-top: 50px;
+    }
 
-	#history th,
-	#history td {
-		color: #fff;
-		padding: 10px;
-		text-align: center;
-		border: 1px solid #333;
-	}
+    #history th,
+    #history td {
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #333;
+    }
 
-	#history th {
-		background-color: #333;
-		color: #fff;
-	}
+    #history th {
+      background-color: #333;
+      color: #fff;
+    }
 
   
     button {
-		width: 200px;
-		margin-top: 50px;
-		font-size: 18px;
-		padding: 10px 20px;
-		border: none;
-		border-radius: 5px;
-		cursor: pointer;
-		transition: background-color 0.2s ease;
-		width: 200px;
-		margin-top: 50px;
+      width: 200px;
+      margin-top: 50px;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      width: 200px;
+      margin-top: 50px;
     }
 
-	.bs{
-		background-color: #4287f5;
-	}
+    .bs{
+      background-color: #4287f5;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1 id="result">Coin Flip</h1>
     <button id="flip-button" onclick="flipCoin()">Flip the coin</button>
-	<table id="history">
-		<tr>
-		  <th>Результат</th>
-		  <th>Дата и время</th>
-		</tr>
-	</table>
-	<button class="bs" ><a href="https://github.com/Swek09/flip/blob/main/code.cpp">Исходник</a></button>
+    <table id="history">
+      <tr>
+        <th>Результат</th>
+        <th>Дата и время</th>
+      </tr>
+    </table>
+    <button class="bs" ><a href="https://github.com/Swek09/flip/blob/main/code.cpp">Исходник</a></button>
   </div>
   <script src="script.js"></script>
 </body>
