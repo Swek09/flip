@@ -14,7 +14,12 @@ function flipCoin() {
 	const flipResult = randomNum === 0 ? "Орел" : "Решка";
   
 	// Показываем результат на странице
-	result.textContent = `Выпал ${flipResult}!`;
+	if (flipResult == "Орел"){
+		result.textContent = `Выпал ${flipResult}!`;
+	}
+	else{
+		result.textContent = `Выпала ${flipResult}!`;
+	}
   
 	// Создаем новую строку для таблицы истории
 	const newRow = document.createElement("tr");
