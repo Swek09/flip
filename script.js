@@ -20,6 +20,21 @@ function flipCoin() {
 	else{
 		result.textContent = `Выпала ${flipResult}!`;
 	}
+	let heads = document.getElementById('heads');
+	let tails = document.getElementById('tails');
+	let headsChance = document.getElementById('heads-chance');
+	let tailsChance = document.getElementById('tails-chance');
+
+	if (flipResult == 'Орел') {
+	heads.textContent = parseInt(heads.textContent) + 1;
+	} else {
+	tails.textContent = parseInt(tails.textContent) + 1;
+	}
+
+	let total = parseInt(heads.textContent) + parseInt(tails.textContent);
+	headsChance.textContent = `${Math.round(parseInt(heads.textContent) / total * 100)}%`;
+	tailsChance.textContent = `${Math.round(parseInt(tails.textContent) / total * 100)}%`;
+
   
 	// Создаем новую строку для таблицы истории
 	const newRow = document.createElement("tr");

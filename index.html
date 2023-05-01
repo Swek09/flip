@@ -31,7 +31,7 @@
 
     #history {
       border-collapse: collapse;
-      margin-top: 50px;
+      margin-top: 30px;
     }
 
     #history th,
@@ -64,13 +64,45 @@
     .bs{
       background-color: #4287f5;
     }
+
+	#chance {
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+
+    #chance th,
+    #chance td {
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #333;
+    }
+
+    #chance th {
+      background-color: #333;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1 id="result">Coin Flip</h1>
     <button id="flip-button" onclick="flipCoin()">Подбросить</button>
-    <table id="history">
+    <table id="chance">
+		<tr>
+		  <th>Орёл</th>
+		  <th>Решка</th>
+		</tr>
+		<tr>
+		  <td id="heads">0</td>
+		  <td id="tails">0</td>
+		</tr>
+		<tr>
+		  <td id="heads-chance">0%</td>
+		  <td id="tails-chance">0%</td>
+		</tr>
+	  </table>	  
+	<table id="history">
       <tr>
         <th>Результат</th>
         <th>Дата и время</th>
