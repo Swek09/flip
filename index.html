@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     html, body {
-      background-color: #333;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
+  background-color: #333;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+	html {
+		overflow-y: scroll;
+	}
 
     h1{
       color: #fff;
@@ -27,11 +30,11 @@
   
     #result {
       margin: 0;
+	  margin-top: 30px;
     }
 
     #history {
       border-collapse: collapse;
-      margin-top: 30px;
     }
 
     #history th,
@@ -86,6 +89,12 @@
 </head>
 <body>
   <div class="container">
+	<table id="history">
+		<tr>
+		  <th>Результат</th>
+		  <th>Дата и время</th>
+		</tr>
+	  </table>
     <h1 id="result">Coin Flip</h1>
     <button id="flip-button" onclick="flipCoin()">Подбросить</button>
     <table id="chance">
@@ -101,13 +110,7 @@
 		  <td id="heads-chance">0%</td>
 		  <td id="tails-chance">0%</td>
 		</tr>
-	  </table>	  
-	<table id="history">
-      <tr>
-        <th>Результат</th>
-        <th>Дата и время</th>
-      </tr>
-    </table>
+	  </table>
     <button class="bs" ><a href="https://github.com/Swek09/flip/blob/main/code.cpp">Исходник</a></button>
   </div>
   <script src="script.js"></script>
